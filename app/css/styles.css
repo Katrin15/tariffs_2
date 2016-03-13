@@ -1,0 +1,132 @@
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../font/Light/OpenSans-Light.eot');
+  src: url('../font/Light/OpenSans-Light.eot?#iefix') format('embedded-opentype'), url('../font/Light/OpenSans-Light.woff') format('woff'), url('../font/Light/OpenSans-Light.ttf') format('truetype'), url('../font/Light/OpenSans-Light.svg#OpenSansLight') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../font/Regular/OpenSans-Regular.eot');
+  src: url('../font/Regular/OpenSans-Regular.eot?#iefix') format('embedded-opentype'), url('../font/Regular/OpenSans-Regular.woff') format('woff'), url('../font/Regular/OpenSans-Regular.ttf') format('truetype'), url('../font/Regular/OpenSans-Regular.svg#OpenSansRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../font/Bold/OpenSans-Bold.eot');
+  src: url('../font/Bold/OpenSans-Bold.eot?#iefix') format('embedded-opentype'), url('../font/Bold/OpenSans-Bold.woff') format('woff'), url('../font/Bold/OpenSans-Bold.ttf') format('truetype'), url('../font/Bold/OpenSans-Bold.svg#OpenSansBold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Open Sans';
+  font-size: 16px;
+  background-color: #e2e2e2;
+  color: #3e4f6a;
+  text-align: center;
+}
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.plan {
+  width: 90%;
+  display: inline-block;
+  background-color: white;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  margin-top: 25px;
+  overflow: hidden;
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+.plan .name {
+  line-height: 85px;
+  font-size: 34px;
+  font-weight: 300;
+}
+.plan .price {
+  line-height: 45px;
+  background-color: #49546e;
+  font-weight: 700;
+  color: #8394ae;
+}
+.plan .price span {
+  color: white;
+}
+.plan .descr p {
+  margin-bottom: 20px;
+  color: #b3b3b3;
+}
+.plan .descr p:first-child {
+  margin-top: 40px;
+}
+.plan .descr p:last-child {
+  margin-bottom: 40px;
+}
+.plan .descr p span {
+  font-weight: 700;
+  color: #3e4f6a;
+}
+.plan a {
+  text-transform: uppercase;
+  line-height: 40px;
+  display: inline-block;
+  text-decoration: none;
+  width: 80%;
+  border: solid #3e4f6a 2px;
+  color: #3e4f6a;
+  font-weight: 700;
+  margin-bottom: 15px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.plan:hover {
+  -ms-transform: scale(1.02);
+  -webkit-transform: scale(1.02);
+  transform: scale(1.02);
+}
+.main .name {
+  background-color: #49546e;
+  color: white;
+  -webkit-border-radius: 10px 10px 0 0;
+}
+.main .price {
+  background-color: #df824d;
+  color: white;
+}
+.main a {
+  background-color: #df824d;
+  color: white;
+  border-color: #df824d;
+}
+@media screen and (min-width: 480px) {
+  .plan {
+    width: 45%;
+  }
+  .plan:nth-of-type(1) {
+    margin-right: 2%;
+  }
+  .plan:nth-of-type(3) {
+    margin-right: 2%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .plan {
+    width: 20%;
+    margin-right: 2%;
+  }
+  .plan:nth-of-type(4) {
+    margin-right: 0;
+  }
+}
